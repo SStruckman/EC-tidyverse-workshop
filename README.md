@@ -25,3 +25,6 @@ We'll be wrangling and plotting data for a subset of chromatic dragons:
 |     Sharptoothed flier    |     *Jaggermeryx strummeri*    |
 |     Fiery blue     |    *Sauroniops naida* |
 |     Four-toed scale-back   |     *Sauroniops reike*    |
+
+## Attribution
+The code and materials in this repository are adapted from and heavily inspired by those compiled by [Britta Schumacher](https://github.com/blschum/CAS-tidyverse-workshop) and [Simona Picardi](https://ecorepsci.github.io/reproducible-science/tidyverse.html). 
