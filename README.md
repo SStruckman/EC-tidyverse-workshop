@@ -2,8 +2,6 @@
 Built for EC Studio February 2022  
 Soren Struckman
 
-RPubs (published knitted html) can be found [here](https://rpubs.com/blschum/CAS-tidyverse-workshop).
-
 ## Getting started
 If you are participating in the workshop, you may either (a) work on the [tidyverse-workshop-TEMPLATE.Rmd](https://github.com/sstruckman/EC-tidyverse-workshop/blob/main/tidyverse-workshop-TEMPLATE.Rmd), which leaves space for participants to type code with instruction, or (b) follow along along in the [tidyverse-workshop-KEY.Rmd](https://github.com/sstruckman/EC-tidyverse-workshop/blob/main/tidyverse-workshop-KEY.Rmd), which has all of the information and code we will be working with. Download the [tidyverse-workshop-KEY.html](https://github.com/sstruckman/EC-tidyverse-workshop/blob/main/tidyverse-workshop-KEY.html) for a knitted (and much easier to read) version of the KEY.
 
