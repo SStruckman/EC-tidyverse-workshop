@@ -1,5 +1,5 @@
 # Tidyverse workshop
-Built for EC Studio February 2022  
+Built for EC Workshop February 2022  
 Soren Struckman
 
 ## Getting started
@@ -11,7 +11,7 @@ If you are participating in the workshop, you may either (a) work on the [tidyve
 3. Practice Exercises on "real" data
 
 ## Data source
-All [dragon data](http://search.r-project.org/R/R/library/DALEX/html/dragons.html) is from the DALEX package.
+All [dragon data](http://search.r-project.org/R/R/library/DALEX/html/dragons.html) is from the `DALEX` package.
 
 ## Species of interest
 We'll be wrangling and plotting data for a subset of chromatic dragons:

@@ -9,7 +9,7 @@ output:
     toc_float: true
 ---
 
-*FIRST*: Many thanks to Britta Schumacher for originally compiling these materials, and to An Bui & Sam Csik's tidyverse [tutorial](https://github.com/samanthacsik/Intro-to-the-Tidyverse), Dr. Simona Picardi's tidyverse [chapter](https://ecorepsci.github.io/reproducible-science/tidyverse.html), & Dr. Alison Horst's tidyverse [aRt](https://github.com/allisonhorst/stats-illustrations) which helped immensely in preparing this document.
+*FIRST*: Many thanks to Britta Schumacher for originally compiling these materials, and to An Bui & Sam Csik's tidyverse [tutorial](https://github.com/samanthacsik/Intro-to-the-Tidyverse), Dr. Simona Picardi's tidyverse [chapter](https://ecorepsci.github.io/reproducible-science/tidyverse.html), and Dr. Alison Horst's tidyverse [aRt](https://github.com/allisonhorst/stats-illustrations) which helped immensely in preparing this document.
 
 # What is the tidyverse?
 
@@ -303,7 +303,7 @@ str(dragons)      # view data structure of df
 colnames(dragons) # view the columns of df
 ```
 
-### Wrangle:
+## Wrangle:
 
 This dataset is *pretty big* -- we'll want to do some wrangling so that it only includes the information that we're interested in. We will:
 
