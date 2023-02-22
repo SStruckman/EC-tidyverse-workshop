@@ -94,6 +94,7 @@ beaver_data <- tribble(
 It's a **REALLY** good habit to **ALWAYS** explore your data before you do anything; form this habit now (you'll thank yourself down the line!):
 ```{r, eval = FALSE}
 str(beaver_data) # view data structures of beaver_data; i.e. column data types
+#glimpse(beaver_data)
 colnames(beaver_data) # view column names of beaver_data
 head(beaver_data) # view first 10 rows of beaver_data 
 ```
@@ -138,7 +139,7 @@ From here on, we'll be working with our "tidy" data i.e. `tidy_beaver` to practi
 
 
 ## Data Wrangling and `dplyr`
-[Data wrangling](https://r4ds.had.co.nz/wrangle-intro.html) refers to the art of getting your data into R in a useful form for visualization and modeling. It is *definitely* an art...and a science...and sometimes takes some brute force...think dancing with a big ole' bison who'd really like to pierce you, on rollerskates, while trying to cross stitch. It can be a LOT of work; a LOT of HARD work. But `tidyverse` and our use of tidy datasets have made this work MUCH more predictable and user-friendly.
+[Data wrangling](https://r4ds.had.co.nz/wrangle-intro.html) refers to the art of getting your data into R in a useful form for visualization and modeling. It is *definitely* an art...and a science...and sometimes takes some brute force...think dancing with a big ole' bison who'd really like to gore you, on rollerskates, while trying to cross stitch. It can be a LOT of work; a LOT of HARD work. But `tidyverse` and our use of tidy datasets have made this work MUCH more predictable and user-friendly.
 
 <center>
 ![Artwork by the *incredible* Alison Horst](media/dplyr_AHorst.jpg)
@@ -180,7 +181,7 @@ ski_days_vec <- tidy_beaver %>%
 **`arrange()`** orders observations as specified (*default* = alphabetical or ascending)
 ```{r}
 ordered_names <- tidy_beaver %>% 
-  arrange(name) # for descending alphabetical order, use "arrange(desc(names))"
+  arrange(name) # for descending alphabetical order, use "arrange(desc(name))"
 
 ordered_num_skidays <- tidy_beaver %>% 
   arrange(ski_days) # or for descending order, use "arrange(-ski_days)"
@@ -193,7 +194,7 @@ skidays_per_month <- tidy_beaver %>% # assuming there are 4 months in the season
   mutate(ski_hours = ski_days*6, # and 7 hrs of skiing per day (no tailgating??)
          skidays_per_month = ski_days/4)
 
-# use mutate with case_when to add a new column based on multiple conditions
+# use mutate with case_when() to add a new column based on multiple conditions
 fav_skidays <- tidy_beaver %>% 
   mutate(
     fav_skidays = case_when(
@@ -207,7 +208,7 @@ fav_skidays <- tidy_beaver %>%
     )
   )
 
-# use mutate with if_else for binary conditions... 
+# use mutate with if_else() for binary conditions... 
 # Example: if the observation in the 'name' column matches 
 # "Britta", "Erika", or "Sarah", report "yes", they are snowboarders. 
 # If not, report "no", they are skiers.
